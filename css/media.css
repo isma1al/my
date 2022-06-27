@@ -1,3 +1,9 @@
+@media (max-width: 960px) {
+    .items__inner {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 810px) {
     .right__container {
         width: 100%;
@@ -26,6 +32,15 @@
 
     .burger__menu {
         background: rgba(0, 0, 0, 0.9);
+    }
+}
+
+@media (max-width: 550px) {
+    .works-left__container {
+        display: none;
+    }
+    .works-right__container {
+        width: 100%;
     }
 }
 
