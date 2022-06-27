@@ -117,7 +117,7 @@ header:after {
 }
 
 .left__container {
-    background: rgba(0, 0, 0, 0.5);
+    background: black;
     color: #fff;
     width: 40%;
     position: fixed;

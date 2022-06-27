@@ -4,7 +4,6 @@ const burgerBtn = document.querySelector('.burger-menu__btn');
 const title = document.querySelector('.header__title');
 
 
-
 const date = new Date();
 const hours = date.getHours();
 
@@ -25,6 +24,12 @@ menuWrapper.addEventListener('click', () =>{
     hamburger.classList.toggle('animate')
     emptyMenu.classList.toggle('empty__menu--active');
     burgerMenu.classList.toggle('burger__menu--active')
+    if(window.screen.width < '810' && emptyMenu.classList.contains('empty__menu--active')){
+    document.querySelector('html').style.overflow = 'hidden'
+    } else {
+        document.querySelector('html').style.overflow = ''
+    }
 })
+
 
 

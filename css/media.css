@@ -23,6 +23,10 @@
     .burger__menu--active {
         transform: translateY(0);
     }
+
+    .burger__menu {
+        background: rgba(0, 0, 0, 0.9);
+    }
 }
 
 @media (max-width: 500px) {
