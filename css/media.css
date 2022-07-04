@@ -5,6 +5,18 @@
 }
 
 @media (max-width: 810px) {
+    .items__inner {
+        gap: 0;
+    }
+
+    .github_page {
+        margin-top: 0;
+    }
+
+    .works__item {
+        margin-bottom: 30px;
+    }
+
     .header {
         background-attachment: unset;
     }
