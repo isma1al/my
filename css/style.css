@@ -388,11 +388,42 @@ header:after {
 .works-right__container {
     width: 60%;
     text-align: center;
-    background-color: rgb(255, 243, 203);
+    background-color: rgb(70 51 70);
+    padding-bottom: 40px;
+    background: -webkit-repeating-linear-gradient(
+        135deg,
+        #242237 -3px,
+        #242237 0px,
+        rgba(62, 59, 94, 0.88) 3px,
+        rgba(62, 59, 94, 0.88) 3px
+    );
+    background: -moz-repeating-linear-gradient(
+        135deg,
+        #242237 -3px,
+        #242237 0px,
+        rgba(62, 59, 94, 0.88) 3px,
+        rgba(62, 59, 94, 0.88) 3px
+    );
+    background: -o-repeating-linear-gradient(
+        135deg,
+        #242237 -3px,
+        #242237 0px,
+        rgba(62, 59, 94, 0.88) 3px,
+        rgba(62, 59, 94, 0.88) 3px
+    );
+    background: repeating-linear-gradient(
+        -45deg,
+        #242237 -3px,
+        #242237 0px,
+        rgba(41, 41, 41, 0.88) 3px,
+        rgba(62, 59, 94, 0.88) 3px
+    );
+    border: none;
 }
 
 .works__title {
     font-family: "Raleway", sans-serif;
+    color: #fff;
     font-weight: 700;
     font-size: 32px;
     margin-top: 30px;
@@ -408,6 +439,7 @@ header:after {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 40px;
 }
 
 .works__item {
@@ -471,4 +503,134 @@ header:after {
     line-height: 20px;
     color: black;
     font-weight: 500;
+}
+
+@keyframes sheen {
+    0% {
+        transform: skewY(-45deg) translateX(0);
+    }
+    100% {
+        transform: skewY(-45deg) translateX(12.5em);
+    }
+}
+
+.github_page {
+    margin-top: 30px;
+    padding: 0.75em 2em;
+    text-align: center;
+    text-decoration: none;
+    color: #2194e0;
+    border: 2px solid #2194e0;
+    font-size: 21px;
+    display: inline-block;
+    border-radius: 0.3em;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.github_page::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    transform: skewX(-45deg) translateX(0);
+    transition: none;
+}
+
+.github_page:hover {
+    background-color: #2194e0;
+    color: #fff;
+    border-bottom: 4px solid darken(#2194e0, 10%);
+}
+
+.github_page:hover::before {
+    transform: skewX(-45deg) translateX(18.5em);
+    transition: all 0.5s ease-in-out;
+}
+
+.about {
+    background: -webkit-repeating-linear-gradient(
+        135deg,
+        #242237 -3px,
+        #242237 0px,
+        rgba(62, 59, 94, 0.88) 3px,
+        rgba(62, 59, 94, 0.88) 3px
+    );
+    background: -moz-repeating-linear-gradient(
+        135deg,
+        #242237 -3px,
+        #242237 0px,
+        rgba(62, 59, 94, 0.88) 3px,
+        rgba(62, 59, 94, 0.88) 3px
+    );
+    background: -o-repeating-linear-gradient(
+        135deg,
+        #242237 -3px,
+        #242237 0px,
+        rgba(62, 59, 94, 0.88) 3px,
+        rgba(62, 59, 94, 0.88) 3px
+    );
+    background: repeating-linear-gradient(
+        -45deg,
+        #242237 -3px,
+        #242237 0px,
+        rgba(62, 59, 94, 0.88) 3px,
+        rgba(62, 59, 94, 0.88) 3px
+    );
+    border: none;
+}
+
+.about {
+    padding: 100px 20px 0;
+}
+
+.about__info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.about__title {
+    font-size: 36px;
+    font-weight: 700;
+    border-bottom: 2px solid #ffc815;
+    margin-bottom: 30px;
+}
+.about__name {
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.about__skill {
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.about__date {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.about__date span {
+    font-weight: 700;
+    border-bottom: 2px solid #ffc815;
+}
+
+.about__city {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.about__city span {
+    font-weight: 700;
+    border-bottom: 2px solid #ffc815;
+}
+.about__skills {
+    font-size: 20px;
 }

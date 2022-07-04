@@ -5,6 +5,9 @@
 }
 
 @media (max-width: 810px) {
+    .header {
+        background-attachment: unset;
+    }
     .right__container {
         width: 100%;
     }
@@ -32,6 +35,9 @@
 
     .burger__menu {
         background: rgba(0, 0, 0, 0.9);
+    }
+    .left-container__content {
+        padding-bottom: 0;
     }
 }
 
