@@ -40,7 +40,11 @@ for(let anchor of anchors){
         emptyMenu.classList.remove('empty__menu--active');
     burgerMenu.classList.remove('burger__menu--active')
     hamburger.classList.toggle('animate')
-    document.querySelector('html').style.overflow = ''
+     if(window.screen.width < '810' && emptyMenu.classList.contains('empty__menu--active')){
+        document.querySelector('html').style.overflow = 'hidden'
+        } else {
+            document.querySelector('html').style.overflow = ''
+        }
         const blockID = anchor.getAttribute('href')
         document.querySelector('' + blockID).scrollIntoView({
             behavior: 'smooth',
