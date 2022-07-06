@@ -31,11 +31,15 @@ menuWrapper.addEventListener('click', () =>{
     }
 })
 
+
 const anchors = document.querySelectorAll('.link')
 
 for(let anchor of anchors){
     anchor.addEventListener('click', (e) =>{
         e.preventDefault();
+        emptyMenu.classList.remove('empty__menu--active');
+    burgerMenu.classList.remove('burger__menu--active')
+    hamburger.classList.toggle('animate')
         const blockID = anchor.getAttribute('href')
         document.querySelector('' + blockID).scrollIntoView({
             behavior: 'smooth',
