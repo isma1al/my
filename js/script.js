@@ -37,10 +37,14 @@ const anchors = document.querySelectorAll('.link')
 for(let anchor of anchors){
     anchor.addEventListener('click', (e) =>{
         e.preventDefault();
-        emptyMenu.classList.remove('empty__menu--active');
-    burgerMenu.classList.remove('burger__menu--active')
-    hamburger.classList.toggle('animate')
-     if(window.screen.width < '810' && emptyMenu.classList.contains('empty__menu--active')){
+        if(anchor.classList.contains('menu__list-link')){
+            emptyMenu.classList.remove('empty__menu--active');
+            burgerMenu.classList.remove('burger__menu--active')
+            hamburger.classList.toggle('animate')
+        } else {
+            console.log(1);
+        }
+    if(window.screen.width < '810' && emptyMenu.classList.contains('empty__menu--active')){
         document.querySelector('html').style.overflow = 'hidden'
         } else {
             document.querySelector('html').style.overflow = ''
