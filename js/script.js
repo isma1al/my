@@ -40,6 +40,7 @@ for(let anchor of anchors){
         emptyMenu.classList.remove('empty__menu--active');
     burgerMenu.classList.remove('burger__menu--active')
     hamburger.classList.toggle('animate')
+    document.querySelector('html').style.overflow = ''
         const blockID = anchor.getAttribute('href')
         document.querySelector('' + blockID).scrollIntoView({
             behavior: 'smooth',
