@@ -28,12 +28,12 @@
             <p class="header__text">I'm WEB Developer - Isma Bekov</p>
             <div class="header-text__content">
                 <span>Welcome to My</span>
-                <button class="portfolio__btn">Portfolio</button>
+                <a href="#works" class="portfolio__btn link">Portfolio</a>
             </div>
         </div>
         <div class="left__container">
             <div class="left-container__content">
-                <button class="left-container__btn">Написать</button>
+                <button onclick="window.location.href='https://l.clck.bar/40498'" class="left-container__btn">Написать</button>
                 <div class="menu-wrapper">
                   <div class="hamburger-menu"></div>	  
                 </div>
@@ -49,29 +49,57 @@
                     </div>
                     <span class="name">Isma Bekov</span>
                     <ul class="menu__list">
-                        <li class="menu__list-item"><a href="#" class="menu__list-link">Мои работы</a></li>
-                        <li class="menu__list-item"><a href="#" class="menu__list-link">Обо мне</a></li>
-                        <li class="menu__list-item"><a href="#" class="menu__list-link">Контакты</a></li>
+                        <li class="menu__list-item"><a href="#works" class="menu__list-link link">Мои работы</a></li>
+                        <li class="menu__list-item"><a href="#about" class="menu__list-link link">Обо мне</a></li>
+                        <li class="menu__list-item "><a href="#contacts" class="menu__list-link link">Контакты</a></li>
                     </ul>
+                    <div class="socials menu__socials">
+                      <a href="https://github.com/isma1al" class="soc"><img src="img/social/menu_socgithub.svg" alt=""></a>
+                      <a href="https://l.clck.bar/40498" class="soc"><img src="img/social/whatsapp.svg" alt=""></a>
+                      <a href="https://www.instagram.com/isma1al_/" class="soc"><img src="img/social/inst.svg" alt=""></a>
+                      <a href="https://t.me/ismabekov" class="soc"><img src="img/social/telegram.svg" alt=""></a>
+                    </div>
                 </div>
                 
             </div>
         </div>
     </header>
-  <section class="works">
+  <section id="works" class="works">
         <div class="works-left__container">
         </div>
         <div class="works-right__container">
             <h2 class="works__title">Мои работы</h2>
             <div class="items__inner">
+              <div class="works__item">
+                <div class="card_cantainer">
+                    <div class="card">
+                      <div class="front_side"><img class="card__img" src="img/card5.jpg" alt=""></div>
+                      <div class="back_side">
+                        <p>Галерея с параллакс эффектом.</p>
+                        <a href="https://isma1al.github.io/galery/" target="_blank">Galery</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
                 <div class="works__item">
                     <div class="card_cantainer">
                         <div class="card">
                           <div class="front_side"><img class="card__img" src="img/card.png" alt=""></div>
                           <div class="back_side">
-                            <p>Веб-приложение для заказа роллов на React JS</p>
-                            <a href="">Romsem</a>
+                            <p>Веб-приложение для заказа роллов на React JS.</p>
+                            <a href="https://github.com/isma1al/romsem" target="_blank">Romsem</a>
                         </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="works__item">
+                    <div class="card_cantainer">
+                        <div class="card">
+                          <div class="front_side"><img class="card__img" src="img/card4.png" alt=""></div>
+                          <div class="back_side">
+                            <p>Сайт для заказа студенченских работ.</p>
+                            <a href="https://vayacademy.ru/" target="_blank">VayAcademy</a>
+                          </div>
                         </div>
                       </div>
                   </div>
@@ -81,7 +109,7 @@
                       <div class="front_side"><img class="card__img" src="img/card2.png" alt=""></div>
                       <div class="back_side">
                         <p>Landing page для химчистки с Frontend функционалом.</p>
-                        <a href="">Himchist</a>
+                        <a href="https://github.com/isma1al/himchist" target="_blank">Himchist</a>
                       </div>
                     </div>
                   </div>
@@ -89,36 +117,99 @@
               <div class="works__item">
                 <div class="card_cantainer">
                     <div class="card">
-                      <div class="front_side"><span>Передняя сторона</span></div>
-                      <div class="back_side"><span>Задняя сторона</span></div>
+                      <div class="front_side"><img class="card__img" src="img/card3.png" alt=""></div>
+                      <div class="back_side">
+                        <p>Сборка GULP из основных плагинов.</p>
+                        <a href="https://github.com/isma1al/GULP-assembly" target="_blank">Сборка</a>
+                      </div>
                     </div>
                   </div>
               </div>
               
-              <div class="works__item">
-                <div class="card_cantainer">
-                    <div class="card">
-                      <div class="front_side"><span>Передняя сторона</span></div>
-                      <div class="back_side"><span>Задняя сторона</span></div>
-                    </div>
-                  </div>
-              </div>
+              
+
+             
             </div>
-            <a href="#" class="github_page">Все репозитории</a>
+            <a href="https://github.com/isma1al?tab=repositories" class="github_page">Все репозитории</a>
         </div>
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <div class="about__info">
         <h2 class="about__title">
           Обо мне
         </h2>
-        <p class="about__name">Беков Исмаил Багданович</p>
+        <div class="about__inner">
+          <div>
+            <p class="about__name">Беков Исмаил Багданович</p>
         <p class="about__skill">Frontend Developer</p>
         <p class="about__date"><span>Дата рождения:</span> 8 января 2003 (19 лет).</p>
         <p class="about__city"><span>Город:</span> Магас.</p>
-        <h3 class="about__skills">Профессиональные навыки:</h3>
-      </div>
-    </section> 
+          </div>
+          <div class="about__img-block">
+            <img src="img/logo.jpg" alt="">
+          </div>
+        </div>
+        <div class="about__skills-inner">
+          <div class="about__skills-inner__item">
+            <h3 class="about__skills-title">Профессиональные навыки:</h3>
+            <ul class="about__skills">
+              <li class="about__skill-item">JavaScript</li>
+              <li class="about__skill-item">React</li>
+              <li class="about__skill-item">Redux</li>
+              <li class="about__skill-item">Fetch</li>
+              <li class="about__skill-item">Jquery</li>
+              <li class="about__skill-item">HTML5</li>
+              <li class="about__skill-item">CSS3</li>
+              <li class="about__skill-item">SCSS, SASS, LESS</li>
+              <li class="about__skill-item">Блочная, табличная вёрстка</li>
+              <li class="about__skill-item">Резиновая, адаптивная вёрстка</li>
+              <li class="about__skill-item">Pixel Perfect</li>
+              <li class="about__skill-item">Bootstrap</li>
+              <li class="about__skill-item">Git</li>
+              <li class="about__skill-item">Gulp</li>
+              <li class="about__skill-item">Хорошее понимание семантики</li>
+              <li class="about__skill-item">Соответствие стандарту W3C валидатора</li>
+              <li class="about__skill-item">БЭМ</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="about__skills-title">Работа с программами:</h3>
+            <ul class="about__skills-programms">
+              <li class="about__skill-item">Figma</li>
+              <li class="about__skill-item">Adobe Photoshop</li>
+              <li class="about__skill-item">Wordpress</li>
+              <li class="about__skill-item">Openserver</li>
+              <li class="about__skill-item">Prepros</li>
+              <li class="about__skill-item">VsCode</li>
+              <li class="about__skill-item">Sublime Text</li>
+              <li class="about__skill-item">Brackets</li>
+              <li class="about__skill-item">Webstorm</li>
+            </ul>
+          </div>
+          
+        </div>
+        <p class="personal__q-title"><span class="about__span">Личные качества:</span> ответственность, лаконичность, аккуратность, стремление к идеалу.</p>
+        <p class="education"><span class="about__span">Образование:</span> СПО - ИСП (Информационные системы и программирование), неоконченное высшее - цифровая экономика.</p>
+        <p class="advanced"><span class="about__span">Курсы повышения квалификации:</span> GeekBrains, SkillBox, Udemy, GloAcademy, HTML Academy.</p>
+        </div>
+        <div id="contacts" class="contacts__info">
+          <h2 class="contacts__title">
+            Контакты
+          </h2>
+          <a href="tel:+79995988899" class="phone">+7(999)-598-88-99</a>
+          <a href="mailto:ismabekov2003@mail.ru" class="email">ismabekov2003@mail.ru</a>
+          <div class="socials">
+            <a href="https://github.com/isma1al" class="soc"><img src="img/social/menu_socgithub.svg" alt=""></a>
+            <a href="https://l.clck.bar/40498" class="soc"><img src="img/social/whatsapp.svg" alt=""></a>
+            <a href="https://www.instagram.com/isma1al_/" class="soc"><img src="img/social/inst.svg" alt=""></a>
+            <a href="https://t.me/ismabekov" class="soc"><img src="img/social/telegram.svg" alt=""></a>
+          </div>
+        </div>
+    </section>
+    
+      
+  
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -13,6 +13,10 @@ body {
     overflow: hidden;
 }
 
+.link {
+    text-decoration: none;
+}
+
 .header {
     min-height: 100vh;
     width: 100%;
@@ -201,6 +205,7 @@ header:after {
     background-image: url(../img/logo.jpg);
     background-position: bottom center;
     background-repeat: no-repeat;
+    margin: 0 auto;
     background-size: cover;
     margin-bottom: 15px;
     border: 3px solid #ffc815;
@@ -440,7 +445,7 @@ header:after {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 30px;
@@ -495,6 +500,7 @@ header:after {
     background-color: #ffc815;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
+    padding: 15px;
 }
 
 .back_side a {
@@ -611,7 +617,7 @@ header:after {
 }
 
 .about__info {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 70px;
     background-color: #fff;
@@ -628,6 +634,7 @@ header:after {
     font-size: 36px;
     margin-bottom: 10px;
     font-weight: 500;
+    margin-right: 10px;
 }
 .about__skill {
     font-size: 27px;
@@ -652,6 +659,164 @@ header:after {
     font-weight: 700;
     border-bottom: 2px solid #ffc815;
 }
-.about__skills {
+.about__skills-title {
     font-size: 20px;
+    border-bottom: 2px solid #ffc815;
+}
+
+.about__skills {
+    padding-left: 18px;
+    margin-top: 15px;
+}
+.about__skill-item {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.about__skills-title {
+    margin-top: 20px;
+    border-bottom: 2px solid #ffc815;
+    display: inline-block;
+}
+.about__skills-programms {
+    padding-left: 18px;
+    margin-top: 15px;
+}
+
+.about__img-block {
+    max-width: 500px;
+    height: 350px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.about__img-block img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about__skills-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    max-width: 700px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.personal__q-title {
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 27px;
+}
+
+.personal__q-title span {
+    border-bottom: 2px solid #ffc815;
+    font-weight: 700;
+}
+
+.education {
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 27px;
+}
+
+.education span {
+    font-weight: 700;
+    border-bottom: 2px solid #ffc815;
+}
+
+.contacts__info {
+    max-width: 1000px;
+    margin: 70px auto 0;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.contacts__title {
+    font-size: 36px;
+    font-weight: 700;
+    border-bottom: 2px solid #ffc815;
+    margin-bottom: 30px;
+}
+
+.advanced {
+    font-size: 20px;
+    margin-top: 27px;
+    line-height: 27px;
+}
+
+.advanced span {
+    font-weight: 700;
+    border-bottom: 2px solid #ffc815;
+}
+
+.phone,
+.email {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.phone::before,
+.email::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 30px;
+    background-repeat: no-repeat;
+}
+
+.phone::before {
+    background-image: url(../img/social/phone.svg);
+}
+
+.email::before {
+    background-image: url(../img/social/email.svg);
+}
+
+.socials {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.phone:hover,
+.email:hover {
+    color: #ffc815;
+}
+
+.soc {
+    transition: all 0.3s;
+}
+
+.soc:hover {
+    transform: translateY(-7px);
+}
+
+.about__skills-inner__item {
+    margin-right: 10px;
+}
+
+.menu__socials {
+    margin-top: 150px !important;
 }

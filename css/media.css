@@ -51,6 +51,50 @@
     .left-container__content {
         padding-bottom: 0;
     }
+    .about__skills-title {
+        font-size: 18px;
+    }
+    .about__span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 700px) {
+    .about__name {
+        font-size: 28px;
+    }
+
+    .about__skill {
+        font-size: 23px;
+    }
+
+    .about__date {
+        font-size: 17px;
+    }
+
+    .about__city {
+        font-size: 17px;
+    }
+
+    .about__skills-title {
+        font-size: 17px;
+    }
+
+    .personal__q-title {
+        font-size: 17px;
+    }
+
+    .education {
+        font-size: 17px;
+    }
+
+    .advanced {
+        font-size: 17px;
+    }
+
+    .about__skill-item {
+        font-size: 17px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -59,6 +103,43 @@
     }
     .works-right__container {
         width: 100%;
+    }
+
+    .about__title {
+        font-size: 33px;
+    }
+
+    .about__name {
+        font-size: 25px;
+    }
+    .about__skill {
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+
+    .about__date {
+        line-height: 23px;
+    }
+
+    .about__img-block {
+        max-width: 400px;
+        height: 250px;
+        margin-top: 30px;
+    }
+
+    .socials {
+        margin-top: 40px;
+    }
+
+    .github_page {
+        font-size: 17px;
+    }
+    .about {
+        padding: 60px 20px 0;
+    }
+
+    .about__info {
+        padding: 40px;
     }
 }
 
@@ -74,6 +155,35 @@
 
     .portfolio__btn {
         font-size: 17px;
+    }
+
+    .about__title {
+        font-size: 28px;
+    }
+
+    .contacts__title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 410px) {
+    .about__skill {
+        font-size: 19px;
+    }
+    .about__name {
+        font-size: 22px;
+    }
+
+    .phone {
+        font-size: 17px;
+    }
+
+    .email {
+        font-size: 17px;
+    }
+
+    .contacts__info {
+        padding: 25px;
     }
 }
 
